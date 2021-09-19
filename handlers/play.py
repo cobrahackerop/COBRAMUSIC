@@ -187,22 +187,21 @@ async def play(_, message: Message):
                 secmul *= 60
                 
             keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("⏹", "leave"),
-                InlineKeyboardButton("⏸", "puse"),
-                InlineKeyboardButton("▶️", "resume"),
-                InlineKeyboardButton("⏭", "skip"),
-            ],
-            [
-                InlineKeyboardButton("📝 𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 📝", "playlist"),
-            ],
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="YouTube 🎬",
+                            url=f"{url}"),
+                        InlineKeyboardButton(
+                            text="Download 📥",
+                            url=f"{durl}")
+
+                    ]
+                ]
             [
                     InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.me/XD_LIF"),
                     InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💬", url=f"https://t.me/MISTY_SUPORTER"),
-            ],
-            [InlineKeyboardButton("❌ 𝗖𝗹𝗼𝘀𝗲 ❌", "cls")],
-        ]
+            ],      
     )
         except Exception as e:
             title = "NaN"
@@ -260,22 +259,21 @@ async def play(_, message: Message):
             return
 
         keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("⏹", "leave"),
-                InlineKeyboardButton("⏸", "puse"),
-                InlineKeyboardButton("▶️", "resume"),
-                InlineKeyboardButton("⏭", "skip"),
-            ],
-            [
-                InlineKeyboardButton("📝 𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 📝", "playlist"),
-            ],
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="YouTube 🎬",
+                            url=f"{url}"),
+                        InlineKeyboardButton(
+                            text="Download 📥",
+                            url=f"{durl}")
+
+                    ]
+                ]
             [
                     InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.me/XD_LIF"),
                     InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💬", url=f"https://t.me/MISTY_SUPORTER"),
-            ],
-            [InlineKeyboardButton("❌ 𝗖𝗹𝗼𝘀𝗲 ❌", "cls")],
-        ]
+            ],      
             )
         
         if (dur / 60) > DURATION_LIMIT:
