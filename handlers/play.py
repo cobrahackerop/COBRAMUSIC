@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🌝 **𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴...**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -112,7 +112,7 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>Add me as admin of yor group first!</b>")
+                        "<b>𝗔𝗱𝗱 𝗠𝗲 𝗔𝘀 𝗔𝗱𝗺𝗶𝗻 𝗼𝗳 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 𝗙𝗶𝗿𝘀𝘁!</b>")
                     return
 
                 try:
@@ -124,7 +124,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name}, assistant userbot couldn't join your group due to heavy join requests. Make sure userbot is not banned in group and try again later!")
+                        f"<b>👻 𝗙𝗹𝗼𝗼𝗱 𝗪𝗮𝗶𝘁 𝗘𝗿𝗿𝗼𝗿 👻</b> \n\𝗛𝗲𝘆 {user.first_name}, 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗖𝗼𝘂𝗹𝗱𝗻'𝘁 𝗝𝗼𝗶𝗻 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 𝗗𝘂𝗲 𝗧𝗼 𝗛𝗲𝗮𝘃𝘆 𝗝𝗼𝗶𝗻 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝘀. 𝗠𝗮𝗸𝗲 𝗦𝘂𝗿𝗲 𝗨𝘀𝗲𝗿𝗯𝗼𝘁 𝗜𝘀 𝗡𝗼𝘁 𝗕𝗮𝗻𝗻𝗲𝗱 𝗜𝗻 𝗚𝗿𝗼𝘂𝗽 𝗔𝗻𝗱 𝗧𝗿𝘆 𝗔𝗴𝗶𝗻 𝗟𝗮𝘁𝗲𝗿!")
     try:
         await USER.get_chat(chid)
     except:
@@ -138,7 +138,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!"
+                f"❌ 𝗩𝗶𝗱𝗲𝗼𝘀 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗲𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝗧 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆😍!"
             )
 
         file_name = get_file_name(audio)
@@ -152,8 +152,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel 🔊",
-                        url="https://t.me/Infinity_BOTs")
+                        text="𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🖤",
+                        url="https://t.me/MISTY_SUPORT")
                    
                 ]
             ]
@@ -190,55 +190,55 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📥",
                             url=f"{durl}")
                         InlineKeyboardButton(
-                            text="
-                            url=f"
+                            text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
+                            url=f"https://t.me/MISTY_SUPORT")
                         InlineKeyboardButton(
-                            text="
-                            url=f"
+                            text="𝗢𝘄𝗻𝗲𝗿 🐍",
+                            url=f"https://t.me/XD_LIF")
 
                     ]
                 ]
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/638c20c44ca418c8b2178.jpg"
+            thumb_name = "https://telegra.ph/file/99518aed1e6a380255429.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="YouTube 🎬",
+                                text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
                                 url=f"https://youtube.com")
                             InlineKeyboardButton(
-                            text="
-                            url=f"
+                            text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
+                            url=f"https://t.me/MISTY_SUPORT")
                         InlineKeyboardButton(
-                            text="
-                            url=f"
+                            text="𝗢𝘄𝗻𝗲𝗿 🐍",
+                            url=f"https://t.me/XD_LIF")
 
                         ]
                     ]
                 )
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+             await lel.edit(f"❌ 𝗩𝗶𝗱𝗲𝗼𝘀 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗲𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+            return await lel.edit("🌝 **𝗪𝗵𝗮𝘁'𝘀 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁 𝗧𝗼 𝗣𝗹𝗮𝘆 🙄?**")
+        await lel.edit("🐒 **𝗙𝗶𝗻𝗱𝗶𝗻𝗴 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("🎃 **𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗦𝗼𝘂𝗻𝗱𝘀...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -261,7 +261,7 @@ async def play(_, message: Message):
                 
         except Exception as e:
             await lel.edit(
-                "❌ Song not found.\n\nTry another song or maybe spell it properly."
+                "❌ 𝗦𝗼𝗻𝗴 𝗡𝗼𝘁 𝗙𝗼𝘂𝗻𝗱.\n\n𝗧𝗿𝘆 𝗔𝗻𝗼𝘁𝗵𝗲𝗿 𝗦𝗼𝗻𝗴 𝗢𝗿 𝗠𝗮𝘆𝗕𝗲 𝗦𝗽𝗲𝗹𝗹 𝗜𝘁 𝗣𝗿𝗼𝗽𝗲𝗿𝗹𝘆."
             )
             print(str(e))
             return
@@ -270,24 +270,24 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📥",
                             url=f"{durl}")
                         InlineKeyboardButton(
-                            text="
-                            url=f"
+                            text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
+                            url=f"https://t.me/MISTY_SUPORT")
                         InlineKeyboardButton(
-                            text="
-                            url=f"
+                            text="𝗢𝘄𝗻𝗲𝗿 🐍",
+                            url=f"https://t.me/XD_LIF")
 
                     ]
                 ]
             )
         
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+             await lel.edit(f"❌ 𝗩𝗶𝗱𝗲𝗼𝘀 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗲𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)  
@@ -297,7 +297,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
+        caption="**🎵 𝗦𝗼𝗻𝗴:** {}\n**🕒 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:** {} 𝗠𝗶𝗻\n**👤 𝗔𝗱𝗱𝗲𝗱 𝗕𝘆:** {}\n\n**#⃣ 𝗤𝘂𝗲𝘂𝗲𝗱 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻:** {}".𝗙𝗼𝗿𝗺𝗮𝘁(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
@@ -308,7 +308,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
+        caption="**🎵 𝗦𝗼𝗻𝗴:** {}\n**🕒 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻:** {} 𝗠𝗶𝗻\n**👤 𝗔𝗱𝗱𝗲𝗱 𝗕𝘆:** {}\n\n**▶️ Now Playing at `{}`...**".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
         os.remove("final.png")
