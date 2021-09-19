@@ -217,11 +217,11 @@ async def play(_, message: Message):
                                 text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
                                 url=f"https://youtube.com")
                             InlineKeyboardButton(
-                            text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
-                            url=f"https://t.me/MISTY_SUPORT")
-                        InlineKeyboardButton(
-                            text="𝗢𝘄𝗻𝗲𝗿 🐍",
-                            url=f"https://t.me/XD_LIF")
+                                text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
+                                url=f"https://t.me/MISTY_SUPORT")
+                            InlineKeyboardButton(
+                                text="𝗢𝘄𝗻𝗲𝗿 🐍",
+                                url=f"https://t.me/XD_LIF")
 
                         ]
                     ]
