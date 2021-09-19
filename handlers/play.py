@@ -118,7 +118,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Mizuki Music assistant joined this group for play music 🎵**")
+                        message.chat.id, "**𝗔𝗹𝗶𝘇𝗮 𝗠𝘂𝘀𝗶𝗰 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗝𝗼𝗶𝗻 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 𝗡𝗼 𝗟𝗮𝗴 𝗔𝗻𝗱 𝗙𝗮𝘀𝘁 𝗣𝗹𝗮𝘆 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 [𝗖𝗢𝗕𝗥𝗔](https//t.me/XD_LIF)**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -143,7 +143,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/caeb50039026a746e7252.jpg"
+        thumb_name = "https://telegra.ph/file/99518aed1e6a380255429.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
