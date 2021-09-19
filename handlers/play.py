@@ -191,10 +191,16 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
-                            url=f"{url}"),
+                            url=f"{url}")
                         InlineKeyboardButton(
                             text="𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📥",
                             url=f"{durl}")
+
+               ] 
+                    ]
+
+                [ 
+                    [
                         InlineKeyboardButton(
                             text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
                             url=f"https://t.me/MISTY_SUPORT")
@@ -216,12 +222,6 @@ async def play(_, message: Message):
                             InlineKeyboardButton(
                                 text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
                                 url=f"https://youtube.com")
-                            InlineKeyboardButton(
-                                text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
-                                url=f"https://t.me/MISTY_SUPORT")
-                            InlineKeyboardButton(
-                                text="𝗢𝘄𝗻𝗲𝗿 🐍",
-                                url=f"https://t.me/XD_LIF")
 
                         ]
                     ]
@@ -275,12 +275,6 @@ async def play(_, message: Message):
                         InlineKeyboardButton(
                             text="𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📥",
                             url=f"{durl}")
-                        InlineKeyboardButton(
-                            text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
-                            url=f"https://t.me/MISTY_SUPORT")
-                        InlineKeyboardButton(
-                            text="𝗢𝘄𝗻𝗲𝗿 🐍",
-                            url=f"https://t.me/XD_LIF")
 
                     ]
                 ]
