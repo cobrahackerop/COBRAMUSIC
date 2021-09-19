@@ -198,6 +198,10 @@ async def play(_, message: Message):
 
                     ]
                 ]
+[
+                    InlineKeyboardButton(text="🐍 Ƈɦɑɳɳɘɭ 🐍", url=f"https://t.m/xd_lif"),
+                    InlineKeyboardButton(text="💬 Ɠɤøʋƥ 💬", url=f"https://t.me/MISTY_SUPORTER"),
+            ],
             )
         except Exception as e:
             title = "NaN"
