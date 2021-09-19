@@ -9,9 +9,8 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
-
-I can play music in your group's voice call. Developed by [Jason](https://t.me/ImJanindu).
+        f"""**Hey, 𝗜'𝗔𝗺 𝗔𝗻 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝗦𝘂𝗽𝗲𝗿𝗙𝗮𝘀𝘁 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁 {bn} 😋
+𝗜 𝗖𝗮𝗻 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗲𝘅𝘆 𝗚𝗿𝗼𝘂𝗽'𝘀 𝗩𝗰. 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗕𝘆 [𝗖𝗼𝗯𝗿𝗮](https://t.me/ImJanindu).
 
 Add me to your group and play music freely!**
         """,
@@ -19,17 +18,17 @@ Add me to your group and play music freely!**
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/Infinity-Bots/GroupMusicPlayerBot")
+                        "🤞 𝗠𝘆 𝗢𝘄𝗻𝗲𝗿 🤞", url="https://t.me/XD_LIF")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/InfinityBOTs_Support"
+                        "✨ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽", url="https://t.me/MISTY_SUPORTER"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs"
+                        "⚡ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/MISTY_SUPORT"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
+                        "➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
                     )]
             ]
         ),
@@ -43,7 +42,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs")
+                        "⚡ 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url="https://t.me/MISTY_SUPORT")
                 ]
             ]
         )
