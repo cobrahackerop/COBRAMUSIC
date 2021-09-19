@@ -187,30 +187,23 @@ async def play(_, message: Message):
                 secmul *= 60
                 
             keyboard = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
-                            url=f"{url}")
-                        InlineKeyboardButton(
-                            text="𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📥",
-                            url=f"{durl}")
-
-               ] 
-                    ]
-
-                [ 
-                    [
-                        InlineKeyboardButton(
-                            text="𝗨𝗽𝗱𝗮𝘁𝗲𝘀 ⚡",
-                            url=f"https://t.me/MISTY_SUPORT")
-                        InlineKeyboardButton(
-                            text="𝗢𝘄𝗻𝗲𝗿 🐍",
-                            url=f"https://t.me/XD_LIF")
-
-                    ]
-                ]
-            )
+        [
+            [
+                InlineKeyboardButton("⏹", "leave"),
+                InlineKeyboardButton("⏸", "puse"),
+                InlineKeyboardButton("▶️", "resume"),
+                InlineKeyboardButton("⏭", "skip"),
+            ],
+            [
+                InlineKeyboardButton("📝 𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 📝", "playlist"),
+            ],
+            [
+                    InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.me/XD_LIF"),
+                    InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💬", url=f"https://t.me/MISTY_SUPORTER"),
+            ],
+            [InlineKeyboardButton("❌ 𝗖𝗹𝗼𝘀𝗲 ❌", "cls")],
+        ]
+    )
         except Exception as e:
             title = "NaN"
             thumb_name = "https://telegra.ph/file/99518aed1e6a380255429.jpg"
@@ -267,17 +260,22 @@ async def play(_, message: Message):
             return
 
         keyboard = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="𝗬𝗼𝘂𝗧𝘂𝗯𝗲 🎬",
-                            url=f"{url}"),
-                        InlineKeyboardButton(
-                            text="𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 📥",
-                            url=f"{durl}")
-
-                    ]
-                ]
+        [
+            [
+                InlineKeyboardButton("⏹", "leave"),
+                InlineKeyboardButton("⏸", "puse"),
+                InlineKeyboardButton("▶️", "resume"),
+                InlineKeyboardButton("⏭", "skip"),
+            ],
+            [
+                InlineKeyboardButton("📝 𝗣𝗹𝗮𝘆𝗹𝗶𝘀𝘁 📝", "playlist"),
+            ],
+            [
+                    InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.me/XD_LIF"),
+                    InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 💬", url=f"https://t.me/MISTY_SUPORTER"),
+            ],
+            [InlineKeyboardButton("❌ 𝗖𝗹𝗼𝘀𝗲 ❌", "cls")],
+        ]
             )
         
         if (dur / 60) > DURATION_LIMIT:
