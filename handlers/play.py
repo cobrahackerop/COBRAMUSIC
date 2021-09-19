@@ -187,23 +187,18 @@ async def play(_, message: Message):
                 secmul *= 60
                 
             keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("⏹", "leave"),
-                InlineKeyboardButton("⏸", "puse"),
-                InlineKeyboardButton("▶️", "resume"),
-                InlineKeyboardButton("⏭", "skip"),
-            ],
-            [
-                InlineKeyboardButton("text="YouTube 🎬", url=f"{url}")),
-            ],
-            [
-                    InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.me/XD_LIF"),
-                    InlineKeyboardButton(text="💬  𝗚𝗿𝗼𝘂𝗽 💬", url=f"https://t.me/MISTY_SUPORTER"),
-            ],
-            [InlineKeyboardButton("text="Download 📥",url=f"{durl}")],
-        ]
-    )
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="YouTube 🎬",
+                            url=f"{url}"),
+                        InlineKeyboardButton(
+                            text="Download 📥",
+                            url=f"{durl}")
+
+                    ]
+                ]
+            )
         except Exception as e:
             title = "NaN"
             thumb_name = "https://telegra.ph/file/99518aed1e6a380255429.jpg"
@@ -260,23 +255,18 @@ async def play(_, message: Message):
             return
 
         keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("⏹", "leave"),
-                InlineKeyboardButton("⏸", "puse"),
-                InlineKeyboardButton("▶️", "resume"),
-                InlineKeyboardButton("⏭", "skip"),
-            ],
-            [
-                InlineKeyboardButton("text="YouTube 🎬", url=f"{url}")),
-            ],
-            [
-                    InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.me/XD_LIF"),
-                    InlineKeyboardButton(text="💬  𝗚𝗿𝗼𝘂𝗽 💬", url=f"https://t.me/MISTY_SUPORTER"),
-            ],
-            [InlineKeyboardButton("text="Download 📥",url=f"{durl}")],
-        ]
-    )
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="YouTube 🎬",
+                            url=f"{url}"),
+                        InlineKeyboardButton(
+                            text="Download 📥",
+                            url=f"{durl}")
+
+                    ]
+                ]
+            )
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ 𝗩𝗶𝗱𝗲𝗼𝘀 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗲𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆!")
              return
