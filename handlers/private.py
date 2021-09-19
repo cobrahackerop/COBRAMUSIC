@@ -10,7 +10,7 @@ async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
         f"""**Hey, 𝗜'𝗔𝗺 𝗔𝗻 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗛𝗶𝗴𝗵 𝗤𝘂𝗮𝗹𝗶𝘁𝘆 𝗦𝘂𝗽𝗲𝗿𝗙𝗮𝘀𝘁 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁 {bn} 😋
-𝗜 𝗖𝗮𝗻 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗲𝘅𝘆 𝗚𝗿𝗼𝘂𝗽'𝘀 𝗩𝗰. 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗕𝘆 [𝗖𝗼𝗯𝗿𝗮](https://t.me/ImJanindu).
+𝗜 𝗖𝗮𝗻 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗲𝘅𝘆 𝗚𝗿𝗼𝘂𝗽'𝘀 𝗩𝗰. 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗱 𝗕𝘆 [𝗖𝗼𝗯𝗿𝗮](https://t.me/xd_lif).
 
 Add me to your group and play music freely!**
         """,
