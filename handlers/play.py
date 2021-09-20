@@ -270,9 +270,9 @@ async def play(_, message: Message):
 
                     ]
                 ]
-  [
-                    InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.m/xd_lif"),
-                    InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💬", url=f"https://t.me/MISTY_SUPORTER"),
+   
+                    [InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.m/xd_lif"),
+                    [InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💬", url=f"https://t.me/MISTY_SUPORTER"),
             ],
             )
         if (dur / 60) > DURATION_LIMIT:
