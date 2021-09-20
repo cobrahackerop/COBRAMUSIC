@@ -198,10 +198,6 @@ async def play(_, message: Message):
 
                     ]
                 ]
-  [
-                    InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.m/xd_lif"),
-                    InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💬", url=f"https://t.me/MISTY_SUPORTER"),
-            ],
             )
         except Exception as e:
             title = "NaN"
@@ -270,10 +266,6 @@ async def play(_, message: Message):
 
                     ]
                 ]
-   
-                    [InlineKeyboardButton(text="🐍 𝗢𝘄𝗻𝗲𝗿 🐍", url=f"https://t.m/xd_lif"),
-                    [InlineKeyboardButton(text="💬 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💬", url=f"https://t.me/MISTY_SUPORTER"),
-            ],
             )
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ 𝗩𝗶𝗱𝗲𝗼𝘀 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗲𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆!")
